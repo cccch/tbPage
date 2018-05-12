@@ -1,0 +1,853 @@
+/*顶部导航栏*/
+.top-nav {
+    background-color: #f5f5f5;
+    font: 400 12px/35px 'microsoft yahei';
+    border-bottom: 1px solid #eee;
+}
+.top-nav .content {
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.top-nav .content a{
+    color: #6c6c6c;
+    /*margin-left: 15px;*/
+    padding: 0px 15px;
+    height: 35px;
+    display: inline-block;
+}
+
+.top-nav .top-nav-left {
+    float: left;
+    height: 100%;
+}
+.top-nav .top-nav-left a:nth-child(1){
+    color: #000;
+}
+.top-nav .top-nav-left a:nth-child(2){
+    color: #f40;
+}
+.top-nav .top-nav-right {
+    float: right;
+    position: relative;
+}
+.top-nav-left a span:nth-child(2),.top-nav-right a span:nth-child(2) {
+    color: #ccc;
+    font-size: 1px;
+}
+.top-nav-left a ul, .top-nav-right a ul{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: 35px;
+    display: none;
+}
+.top-nav a:hover span:nth-child(1) {
+    color: #f40;
+}
+
+.top-nav-left a:nth-child(1) ul {
+    height: 300px;
+    width: 250px;
+    /*float: left;*/
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 8px 0 0 15px;
+
+}
+.top-nav-right a:nth-child(1) ul {
+    width: 75px;
+    /*float: left;*/
+    left: 5px;
+    padding: 8px 4px 0 4px;
+}
+.top-nav-right a:nth-child(3) ul {
+    width: 63px;
+    /*float: left;*/
+    left: 166px;
+    padding: 8px 4px 0 4px;
+
+
+}
+.top-nav-right a:nth-child(5) ul {
+    /*float: left;*/
+    width: 75px;
+    left: 329px;
+    padding: 8px 4px 0 4px;
+}
+.top-nav-right a:nth-child(6) ul {
+    /*float: left;*/
+    width: 75px;
+    left: 423px;
+    padding: 8px 4px 0 4px;
+}
+.top-nav-left ul li:hover,.top-nav-right ul li:hover {
+    background-color: #ccc;
+
+}
+
+
+/*顶部搜索栏*/
+.search {
+    background-color: #fff;
+}
+.top-search {
+    width: 1190px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px 0 0 0px;
+    position: relative;
+    background-color: #fff;
+
+}
+.top-search img:nth-of-type(2) {
+    position: absolute;
+    right: 170px;
+    top: 30px;
+}
+.top-search-center {
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.top-search-center .top-search-center-tag {
+    color: #f40;
+    font: 600 13px 'microsoft yahei';
+    margin-left: 15px;
+}
+.top-search-center .top-search-center-tag span {
+    cursor: pointer;
+}
+.top-search-current {
+    display: inline-block;
+    border-radius: 5px 5px 0 0 ;
+    background-image: linear-gradient(to right,#ff9900 0%,#ff5400 100%);
+    color: #fff;
+    padding: 3px;
+}
+.top-search-center-input {
+    width: 640px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #f40;
+    position: relative;
+}
+.top-search-center-input input[type=text] {
+    margin: 2px 0 0 10px;
+    width: 480px;
+    height: 34px;
+}
+.top-search-center-input input[type=button] {
+    width: 75px;
+    height: 100%;
+    float: right;
+    background-image: linear-gradient(to right,#ff9000 0%,#ff5400 100%);
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    color: #fff;
+    font: 700 16px 'microsoft yahei';
+
+}
+.top-search-center-tip ul li {
+    font: 400 13px 'microsoft yahei';
+    float: left;
+    margin: 3px 0 0 5px;
+    color: #666;
+    cursor: pointer;
+}
+.top-search-center-tip ul li:hover {
+    color: #f40;
+}
+.top-search-center-tip ul li:nth-child(1) {
+    color: #ff5400;
+}
+.top-search-center-tip ul li:nth-child(4) {
+    color: #ff5400;
+}
+.top-search-center-tip span {
+    float: right;
+    font: 400 13px 'microsoft yahei';
+    margin: -20px 0 0 5px;
+    color: #666;
+    cursor: pointer;
+
+}
+.top-search>i{
+
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+.top-search>i>a {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*聚划算*/
+.juhuasuan {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+/*主题通栏部分*/
+.top-main {
+    height: 30px;
+    background-image: linear-gradient(90deg,#ff9000 0%,#ff5400 100%);
+    margin-top: 0px;
+}
+.top-main .content {
+    width: 1190px;
+    margin: 0 auto;
+}
+.top-main ul li{
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.top-main ul li a {
+    cursor: pointer;
+
+}
+
+.top-main li:nth-child(1){
+    width: 150px;
+    text-align: center;
+    background-color: #ff5400;
+
+}
+.top-main ul li a{
+    color: #fff;
+    font: 400 17px/30px 'microsoft yahei';
+}
+
+/*主体部分*/
+.main {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-left {
+    float: left;
+    width: 148px;
+    border: 1px solid #ff5400;
+    margin-left: 15px;
+    margin-top: -1px;
+}
+.main-left ul {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+.main-left ul li {
+    height: 32px;
+    color: #666;
+    margin: 9px 0 5px 0;
+    font: 400 15px/32px 'microsoft yahei';
+}
+.main-left ul li:hover{
+    color: #ff5000;
+    background-color: #ffe4dc;
+    transition: all 0.3s;
+}
+.main-left ul li span {
+    float: right;
+    margin-right: 10px;
+}
+/*轮播图*/
+
+.main-center-banner1 {
+    width: 520px;
+    height: 280px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+}
+.main-center-banner1 ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+}
+.main-center-banner1 ol {
+    position: absolute;
+    width: 3640px;
+    left: -520px;
+}
+.main-center-banner1 ol li{
+    float: left;
+}
+.main-center-banner1 .li-current {
+    background-color: #f40;
+}
+.main-center-banner1 ul li {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.left-arc,.right-arc{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    font: 400 30px/40px 'microsoft yahei';
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.left-arc {
+    left: -10px;
+    top: 50%;
+    margin-top: -25px;
+    border-radius: 0 25px 25px 0;
+
+}
+.right-arc {
+    right: -10px;
+    top: 50%;
+    margin-top: -25px;
+    border-radius: 25px 0 0 25px;
+
+}
+.main-center-banner2 {
+    height: 220px;
+    width: 520px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    /*display: inline-block;*/
+    float: left;
+
+}
+.main-center-banner2 img {
+    cursor: pointer;
+}
+.main-center-banner2 img:nth-child(1) {
+    height: 200px;
+    float: left;
+}
+.main-center-banner2 img:nth-child(n+2) {
+    height: 100px;
+    float: left;
+
+}
+.main-center-img1,.main-center-img2 {
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+/*主要内容右侧登录部分*/
+.main-right {
+    position: absolute;
+    top: 5px;
+    width: 320px;
+    right: 0;
+}
+.main-right-top {
+    width: 320px;
+    height: 145px;
+    background: url(../img/banner-background.png);
+    text-align: center;
+    background-size: cover;
+}
+.main-right-top p {
+    font: 400 12px/12px 'microsoft yahei';
+    cursor: pointer;
+}
+.main-right-top img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main-right-top p:nth-of-type(2) a{
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #ffe4db;
+    color: #ff5400;
+}
+.main-right-top span {
+    background-color: #f40;
+    font: 500 15px/25px 'microsoft yahei';
+    color: #fff;
+    margin-left: 5px;
+    width: 80px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main-right-report {
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    background-color: #ffe4db;
+    font: 400 12px 'microsoft yahei';
+    cursor: pointer;
+
+}
+.main-right-report span {
+    line-height: 22px;
+    color: #ff5400;
+}
+
+/*main-right-main*/
+.main-right-main {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 15px;
+    position: relative;
+}
+.main-right-main-top {
+    text-align: center;
+    font: 500 14px 'microsoft yahei';
+
+}
+.main-right-main-top span {
+    margin: 15px 0 0 20px;
+    cursor: pointer;
+}
+.main-right-main-top span::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 35px;
+    background-color: #f40;
+    position: absolute;
+    display: none;
+}
+.main-right-main-top span:nth-child(1)::before {
+    top: 35px;
+    left: 75px;
+}
+.main-right-main-top span:nth-child(2)::before {
+    top: 35px;
+    left: 125px;
+}
+.main-right-main-top span:nth-child(3)::before {
+    top: 35px;
+    left: 178px;
+}
+.main-right-main-top span:nth-child(4)::before {
+    top: 35px;
+    left: 230px;
+}
+.main-right-main-top span:hover {
+    color: #f40;
+}
+.main-right-main-top span:hover::before {
+    display: block;
+}
+.main-right-main-top .tip {
+    margin-top: 20px;
+}
+.main-right-main .tip span{
+    display: inline-block;
+    font: 400 13px 'microsoft yahei';
+    width: 48%;
+    text-align: center;
+    color: #ff5400;
+    margin-top: 10px;
+    cursor: pointer;
+
+
+}
+.main-right-main-center ul {
+    margin-top: 10px;
+}
+.main-right-main-center ul li {
+    width: 78px;
+    height: 71px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    float: left;
+    border-top: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+}
+.main-right-main-center ul li:hover {
+    border: 1px solid #f40;
+    width: 78px;
+    height: 71px;
+}
+.main-right-main-center ul li:hover p {
+    color: #f40;
+}
+.main-right-main-center ul li p {
+    font: 400 12px 'microsoft yahei';
+}
+.main-right-main-center ul li div {
+    background: url(../img/banner-logo.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto 0 auto;
+}
+.main-right-main-center ul li:nth-child(1) div {
+    background-position: 0px 0px;
+}
+.main-right-main-center ul li:nth-child(2) div {
+    background-position: 0px -44px;
+
+}
+.main-right-main-center ul li:nth-child(3) div {
+    background-position: 0px -88px;
+
+}
+.main-right-main-center ul li:nth-child(4) div {
+    background-position: 0px -132px;
+
+}
+.main-right-main-center ul li:nth-child(5) div {
+    background-position: 0px -175px;
+
+}
+.main-right-main-center ul li:nth-child(6) div {
+    background-position: 0px -220px;
+
+}
+.main-right-main-center ul li:nth-child(7) div {
+    background-position: 0px -264px;
+
+}
+.main-right-main-center ul li:nth-child(8) div {
+    background-position: 0px -308px;
+
+}
+.main-right-main-center ul li:nth-child(9) div {
+    background-position: 0px -352px;
+
+}
+.main-right-main-center ul li:nth-child(10) div {
+    background-position: 0px -397px;
+
+}
+.main-right-main-center ul li:nth-child(11) div {
+    background-position: 0px -440px;
+
+}
+.main-right-main-center ul li:nth-child(12) div {
+    background-position: 0px -484px;
+
+}
+
+/*生活研究所*/
+.lifeinstitute {
+    width: 1160px;
+    margin: 20px auto 0 auto;
+    padding-left: 30px;
+    background-color: #fff;
+    padding-top: 5px;
+}
+.lifeinstitute h3 span {
+    font: 400 12px 'microsoft yahei';
+    color: #999;
+    margin-left: 20px;
+}
+.lifeinstitute h3 img {
+    cursor: pointer;
+}
+.lifeinstitute ul li {
+    float: left;
+    width: 190px;
+    text-align: center;
+    cursor: pointer;
+}
+.lifeinstitute ul li:hover img {
+    border: 1px solid #f40;
+}
+.lifeinstitute ul li:hover p {
+    color: #f40;
+}
+.lifeinstitute ul li img {
+    border-radius: 50%;
+    float: left;
+    border: 1px solid #13d0a1;
+}
+.lifeinstitute ul li p {
+    font-size: 15px;
+}
+.lifeinstitute ul li span {
+    color: #999;
+    font: 400 12px 'microsoft yahei';
+    display: block;
+}
+/*有好货，爱逛街*/
+.street {
+    width: 1160px;
+    margin: 20px auto 0 auto;
+    padding-left: 30px;
+    background-color: #fff;
+    padding-top: 5px;
+
+}
+.street .street-left {
+    float: left;
+    width: 50%;
+}
+.street .street-right {
+    float: right;
+    width: 50%;
+}
+.street .street-left h3 span,.street .street-right h3 span {
+    font: 400 12px 'microsoft yahei';
+    color: #999;
+    margin-left: 20px;
+}
+.street .street-left h3 span:nth-child(3) {
+    float: right;
+    margin: 10px 40px 0 0 ;
+    cursor: pointer;
+
+}
+.street .street-right h3 span:nth-child(3) {
+    float: right;
+    margin: 10px 40px 0 0 ;
+    cursor: pointer;
+
+}
+.street ul li {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+}
+.street ul li:hover img {
+    filter: grayscale(40%);
+    transition: all 0.3s;
+}
+.street ul li:hover p {
+    color: #f40;
+}
+.street ul li img {
+    height: 148px;
+}
+.street ul li p {
+    color: #999;
+    font-size: 14px;
+}
+.street ul li span {
+    color: #35b1ff;
+    font-size: 14px;
+}
+.street h3 img {
+    cursor: pointer;
+}
+/*淘抢购*/
+.tao {
+    width: 1150px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.tao h3 span {
+    font: 400 13px 'microsoft yahei';
+    color: #999;
+}
+.tao h3 i {
+    background-color: pink;
+    color: #ff5400;
+}
+.tao h3 img {
+    cursor: pointer;
+}
+.tao h3 s {
+    font: 400 13px 'microsoft yahei';
+    color: #999;
+    float: right;
+    margin: 20px 20px 0 0 ;
+    cursor: pointer;
+}
+.tao ul {
+    width: 100%;
+}
+.tao ul li {
+    float: left;
+    width: 32%;
+    height: 180px;
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.tao ul li:hover>p {
+    color: #f40;
+}
+.tao ul li:hover>img {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.tao ul li img {
+    float: left;
+    padding-right: 6px;
+}
+.tao ul li>span {
+    font-size: 13px;
+    color: #999;
+}
+.tao .tao-progress {
+    width: 150px;
+    background-color: #ff5400;
+    height: 6px;
+    position: absolute;
+    right: 33px;
+    top: 95px;
+    border-radius: 10px;
+}
+.tao .tao-progress div {
+    width: 40%;
+    height: 100%;
+    background-color: #ff9955;
+    border-radius: 10px;
+
+}
+.tao ul li p:nth-of-type(2) {
+    color: #ff9900;
+}
+.tao ul li p:nth-of-type(2) span{
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+}
+.tao ul li p:nth-of-type(3) span {
+    font: 500 18px 'microsoft yahei';
+    color: #ff5400
+}
+.tao ul li p:nth-of-type(3) i {
+    font: 400 12px 'microsoft yahei';
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+/*热卖单品*/
+.hot {
+    width: 1150px;
+    margin: 20px auto 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.hot h3 div {
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background-color: #ff242d;
+}
+.hot h3 span {
+    color: #ff242d;
+    font: 500 20px/20px 'microsoft yahei';
+    margin-left: 10px;
+}
+.hot .hot-list span {
+    color: #999;
+    font: 400 14px 'microsoft yahei';
+    margin-left: 20px;
+}
+.hot .hot-list span:hover {
+    color: #f40;
+}
+.hot .hot-image ul li {
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid transparent;
+
+}
+.hot .hot-image ul li img {
+    cursor: pointer;
+}
+.hot .hot-image ul li:hover {
+    border: 1px solid #f40;
+    
+}
+.hot .hot-image ul li p:nth-of-type(1) {
+    font-size: 14px;
+    color: #666;
+}
+.hot .hot-image ul li p:nth-of-type(2){
+    font-size: 12px;
+    color: #bbb;
+}
+.hot .hot-image ul li p:nth-of-type(3) span{
+    color: #ff5000;
+    font: 600 22px 'microsoft yahei';
+}
+.hot .hot-image ul li p:nth-of-type(3) s {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+.hot .hot-image ul li p:nth-of-type(3) i {
+    font-size: 12px;
+    color: #999;
+    float: right;
+    margin: 10px 10px 0 0 ;
+}
+/*尾部*/
+.footer {
+    width: 1150px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.footer h3 {
+    /*width: 60px;*/
+    color: #ccccd0;
+}
+.footer ul li {
+    float: left;
+    width: 25%;
+}
+.footer ul li p {
+    font: 600 19px 'microsoft yahei';
+}
+
+.footer ul li span {
+    color: #999;
+    font: 400 13px 'microsoft yahei';
+    cursor: pointer;
+}
+.footer ul li span:hover {
+    color: #f40;
+}
+/*link部分*/
+.link {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0 70px 0;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.link ol i {
+    font: 400 12px 'microsoft yahei';
+    color: #999;
+    margin-left: 10px;
+}
+.link .link-line {
+    width: 1190px;
+    margin: 20px auto;
+    height: 1px;
+    background-color: #ccc;
+
+}
+.link ol a i{
+    cursor: pointer;
+}
+.link ol a i:hover {
+    color: #f40;
+}

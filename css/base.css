@@ -1,0 +1,32 @@
+/*基本css*/
+/*清除浮动*/
+.clearfix::before,.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;/*兼容ie6*/
+}
+
+/*清除基本样式*/
+html,body,div,span,i,s,a,img,ul,ol,li {
+    margin: 0;
+    padding: 0;
+}
+i,s,a {
+    text-decoration: none;
+    font-style: normal;
+}
+ol,ul {
+    list-style: none;
+}
+input {
+    outline: none;
+    border: none;
+}
+body {
+    background-color: #f4f4f4;
+}
